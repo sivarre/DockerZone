@@ -4,6 +4,7 @@ MAINTAINER sivva26@gmail.com
 RUN yum update -y 
 RUN yum -y install openssh-server openssh
 RUN yum install httpd -y
+COPY index.html /var/www/html/index.html
 #RUN service httpd start
 EXPOSE 22
 EXPOSE 80
